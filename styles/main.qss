@@ -1,0 +1,301 @@
+/* ============================================================
+   DoomCop — Main Stylesheet
+   ============================================================ */
+
+/* ----- Base font/color cascade ----- */
+QMainWindow,
+QWidget {
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    background-color: transparent;
+}
+
+/* ----- Ensure every window root is white ----- */
+QMainWindow > QWidget,
+#dashRoot,
+#sessionRoot,
+#summaryRoot {
+    background-color: #FFFFFF;
+}
+
+/* ----- Labels must never have a box ----- */
+QLabel {
+    background: transparent;
+    border: none;
+}
+
+/* ----- Frames: no random background ----- */
+QFrame {
+    background: transparent;
+}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+#navbar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E4E4E7;
+}
+
+#navLogo {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: -0.5px;
+    background: transparent;
+}
+
+/* ============================================================
+   DASHBOARD — HERO
+   ============================================================ */
+#heroWidget {
+    background-color: transparent;
+}
+
+#heroTitle {
+    font-size: 52px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: -2px;
+    line-height: 1.05;
+    background: transparent;
+}
+
+/* ============================================================
+   DASHBOARD — STATS SECTION
+   ============================================================ */
+#statsSection {
+    background-color: #F4F4F5;
+}
+
+#welcomeHeading {
+    font-size: 44px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: -1px;
+    background: transparent;
+}
+
+#welcomeSub {
+    font-size: 15px;
+    color: #52525B;
+    background: transparent;
+}
+
+#statLabel {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+#statValue {
+    font-size: 14px;
+    color: #52525B;
+    background: transparent;
+}
+
+#statDivider {
+    background-color: #D4D4D8;
+    max-height: 1px;
+    min-height: 1px;
+    border: none;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+QPushButton#ctaBtn {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 32px;
+    letter-spacing: 1.5px;
+}
+
+QPushButton#ctaBtn:hover {
+    background-color: #27272A;
+}
+
+QPushButton#ctaBtn:pressed {
+    background-color: #18181B;
+}
+
+QPushButton#sessionBtn {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 32px;
+    letter-spacing: 1px;
+}
+
+QPushButton#sessionBtn:hover {
+    background-color: #27272A;
+}
+
+QPushButton#saveBtn {
+    background-color: transparent;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #D4D4D8;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+QPushButton#saveBtn:hover {
+    background-color: #F4F4F5;
+}
+
+QPushButton#newSessionBtn {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+QPushButton#newSessionBtn:hover {
+    background-color: #27272A;
+}
+
+QPushButton#dismissBtn {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 32px;
+    letter-spacing: 1px;
+}
+
+QPushButton#dismissBtn:disabled {
+    background-color: #52525B;
+    color: #A1A1AA;
+}
+
+QPushButton#dismissBtn:hover:!disabled {
+    background-color: #27272A;
+}
+
+/* ============================================================
+   SESSION SCREEN
+   ============================================================ */
+#sessionBg {
+    background-color: #C4BFFF;
+}
+
+#sessionNavLogo {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: -0.5px;
+    background: transparent;
+}
+
+#timerLabel {
+    font-size: 48px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: -1.5px;
+    background: transparent;
+}
+
+#sessionSub {
+    font-size: 15px;
+    color: #27272A;
+    font-style: italic;
+    background: transparent;
+}
+
+#caughtLabel {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 1px;
+    background: transparent;
+}
+
+#cameraFrame {
+    background-color: #18181B;
+    border-radius: 16px;
+    border: none;
+}
+
+/* ============================================================
+   SUMMARY SCREEN
+   ============================================================ */
+#summaryBg {
+    background-color: #FFFFFF;
+}
+
+#summaryCard {
+    background-color: #FF7BBA;
+    border-radius: 16px;
+}
+
+#summaryCardTitle {
+    font-size: 26px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: -0.5px;
+    background: transparent;
+}
+
+#summaryKey {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    background: transparent;
+}
+
+#summaryVal {
+    font-size: 14px;
+    color: #000000;
+    background: transparent;
+}
+
+/* ============================================================
+   DOOMSCROLL POPUP
+   ============================================================ */
+#popupOverlay {
+    background-color: rgba(0, 0, 0, 220);
+}
+
+#popupTitle {
+    font-size: 42px;
+    font-weight: 800;
+    color: #FFFFFF;
+    background: transparent;
+}
+
+#popupStats {
+    font-size: 16px;
+    color: #D4D4D8;
+    background: transparent;
+}
+
+#roastBox {
+    background-color: #18181B;
+    border: 2px solid #FF7BBA;
+    border-radius: 12px;
+}
+
+#roastText {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FF7BBA;
+    background: transparent;
+}

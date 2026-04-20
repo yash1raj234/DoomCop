@@ -1,0 +1,7 @@
+PyQt6>=6.6.0
+opencv-python>=4.9.0
+mediapipe>=0.10.9
+sqlalchemy>=2.0.0
+matplotlib>=3.8.0
+numpy>=1.26.0
+pyinstaller>=6.4.0
