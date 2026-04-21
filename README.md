@@ -2,7 +2,11 @@
 
 **DoomCop** is a modern, aggressive productivity assistant designed to break your doomscrolling habits using real-time AI tracking. It watches your posture and gaze to detect when you've slipped into brain-rot behavior and snaps you back to reality.
 
-![DoomCop Hero](assets/icons/swoosh.png)
+
+
+https://github.com/user-attachments/assets/bc262996-c526-4da0-a773-8b165b64f1aa
+
+
 
 ## 🚀 How It Works
 
